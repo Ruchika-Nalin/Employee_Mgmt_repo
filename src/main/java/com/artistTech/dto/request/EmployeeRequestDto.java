@@ -1,19 +1,17 @@
-package com.artistTech.entity;
+package com.artistTech.dto.request;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 import lombok.*;
 
-@Entity
+import java.util.List;
+
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Employee {
-   @Id
-   @GeneratedValue(strategy = GenerationType.AUTO)
+
+public class EmployeeRequestDto {
+
+    @NonNull
     private Integer id;
     private String firstName;
     private String lastName;
